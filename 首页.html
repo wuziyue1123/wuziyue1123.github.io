@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录页面</title>
+<scriptlanguage="JavaScript">
+ 
+  </script>
+
+<meta http-equiv="content-type" content="text/html";charset=UTF-8 />
+<meta http-equiv="Content-Language" content="ch-cn".
+
+</head>
+
+<body onload="myp()"  style="text-align:center">
+ <div id="Layer1" style="position:absolute; width:100%; height:100%;z-index:-1">   
+   <img src="首页.jpg" width="100%" height="100%" /></div>
+<div id="web_page">
+  <font color="#000000" size="+6" face="Georgia, Times New Roman, Times, serif">  
+  唯美食不可辜负也
+  </font>
+
+
+<!--Form 用来提取用户填入并提交的信息-->
+<form method="post" name="frmLogin" action="新建文件夹/04-space-between.html">
+<font color="#000000" size="+2" face="Georgia, Times New Roman, Times, serif">
+ <td>
+ <div style=" margin-top:7% ; margin-left:-2%">
+<h1 align="center">用户登录</h1><br>
+<div align="center">登录姓名：<input type="text" name="txtUserName" value="" size="20" maxlength="20" onfocus="
+	if(this.value=='Your name')this.value=";"" >
+    <br>登录密码: <input type="password" name="txtPassword" value="" size="20" maxlength="20" onfocus="
+	if(this.value=='Your name')this.value=";"" ><br>
+    <input type="submit" name="Submit" value="提交" onclick="vaildateLogin();" >
+    <input type="reset" name="Reset" value="重置" ><br ></div>
+ <applet code="1.html" width="32" height="32">
+ </applet>
+ </div>
+ </td>
+</form>
+
+<!--javaScript 函数validateLogin(),用来验证用户名和密码是否为空-->
+<script language="javaScript">
+function validateLogin()
+{
+var sUserName = document.frmLogin.txtUserName.value;
+var sPassword = document.frmLogin.txtPassword.value;
+if(sUserName=="")
+{
+alert("请输入用户名：");
+return false;
+}
+if(sPassword=="")
+{
+alert("请输入密码：");
+return false;
+}
+
+}
+</script>
+
+
+</html>
+
