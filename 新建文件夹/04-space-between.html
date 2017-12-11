@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>导航页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    body {
+		height:130px;
+        background: url(63ff0b2a80e609a4bb5b966b00d973be.jpg) scroll;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 500px;
+        height: 300px;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	#nav{
+		width:100%;
+		height:100px;
+		margin:0px;
+		margin-top:0px;
+		background-color: #F33;
+	}
+	
+	#nav_mid{
+		width:400px;
+		height:100px;
+		margin-left:450px;
+	
+		font-size:36px;
+		font:"华文行楷";
+		text-align:center;
+	}
+	#nav_mid_logo{
+		width:100px;
+		height:100px;
+		float:left;
+		
+	}
+	#nav1{
+		height:300px;
+		width:300px;
+		position:absolute;
+		background-color: #CCC;
+		float:left;
+		margin-left:100px;
+		margin-top:20px;
+	}
+	#nav1_{
+		width:280px;
+		height:40px;
+		margin:0px;
+		background-color: #FFF;
+		float:left;
+		font-size:24px;
+		text-align:center;
+		margin-top:20px;
+		margin-left:10px;
+		text-decoration:none; 
+	}
+	#nav2{
+		height:300px;
+		width:300px;
+		position:relative;
+		background-color: #CCC;
+		float:right;
+		margin-right:100px;
+		margin-top:-320px;
+	}
+	#footer{
+		width:100%;
+		height:20px;
+		background-color: transparent;
+		font:Arial, Helvetica, sans-serif;
+		font-size:12px;
+		text-align:center;
+		margin-top:110px;
+	}
+	a{
+		text-decoration:none;
+	}
+	
+    </style>
+    
+</head>
+<body>
+
+<div id="nav">
+  <div id="nav_mid">
+  <div id="nav_mid_logo"><img src="Swiper demo_files/logo1.png" width="100%" height="100%"></div><h1>八大菜系</h1></div></div>
+  <div id="nav1">
+  <div id="nav1_"><a href="../滚动文字和图片/滚动文字和图片/滚动.html" >简介</a></div>
+  <div id="nav1_"><a href="../7-9.html">菜单</a></div>
+  <div id="nav1_"><a href="../我们/jianjie.html">关于我们</a></div>
+  <div id="nav1_"><a href="../留言板/留言板.html">留言板</a></div>
+  </div>
+ 
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+           
+            <div class="swiper-slide"><img src="Swiper demo_files/1-16112Z01513.jpg" width="100%" height="100%"></div>
+            <div class="swiper-slide"><img src="Swiper demo_files/6442-11101921291477.jpg" width="100%" height="100%"></div>
+            <div class="swiper-slide"><img src="Swiper demo_files/8882-1104231022328.jpg" width="100%" height="100%"></div>
+            <div class="swiper-slide"><img src="Swiper demo_files/154523-12050Q20G178.jpg" width="100%" height="100%"></div>
+            <div class="swiper-slide"><img src="Swiper demo_files/Redocn_2014011012192525.jpg" width="100%" height="100%"></div>
+            <div class="swiper-slide"><img src="Swiper demo_files/sy_2012042114064409658.jpg" width="100%" height="100%"></div>
+            <div class="swiper-slide"><img src="Swiper demo_files/tooopen_02314741.jpg" width="100%" height="100%"></div>
+            <div class="swiper-slide"><img src="Swiper demo_files/tooopen_sy_147348599424.jpg" width="100%" height="100%"></div>
+            <div class="swiper-slide"><img src="Swiper demo_files/tooopen_sy_150241728419.jpg" width="100%" height="100%"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+    });
+    </script>
+     <div id="nav2"><h3>最近资讯</h3>
+     <p>【今日关注：豫菜】</p><p>豫菜，即河南菜，是中国各大菜系的渊源，烹饪界的许多权威人士认为，豫菜是八大菜系的“母亲”。今天新闻频道推出的《八大菜系掌勺人》，将介绍身怀绝技的新派豫菜代表人樊胜武，让他教你一道正宗豫菜！樊胜武的厨房里藏着怎样的秘密？正宗的豫菜是怎么做的？新闻频道今日关注！</p>
+     <p>12日，“中国美食走进联合国[微博]”活动当天开幕，十多位中国厨师合力奉上中国八大菜系特色佳肴，以饮食文化会各方朋友。图为在美国纽约联合国总部举行的“中国美食走进联合国”活动上，嘉宾互相询问烤鸭的吃法。</p></div>
+    <div id="footer">copyright@2017</div>
+</body>
+</html>
